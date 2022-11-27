@@ -40,6 +40,8 @@ body {
     font-weight: 700;
     cursor: pointer;
     border: none;
+    text-decoration: none;
+    color: #000000;
     transition: background-color .2s ease;  
 }
 
@@ -222,6 +224,11 @@ body {
 .composition__img {
     width: 200px;
     height: 300px;
+}
+
+.composition__btn-container {
+    display: flex;
+    justify-content: center;
 }
 
 /* BLOCK 3 - comments */

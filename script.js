@@ -69,3 +69,22 @@ function getTimeRemaining(endtime) {
   }
    
   initializeClock('countdown', deadline);
+
+// Скролл
+
+const form = document.querySelector('.form-block')
+const buttons = document.querySelectorAll('.scroll-btn')
+
+function scrollTo(el) {
+    window.scroll({
+        left:0,
+        top:el.offsetTop,
+        behavior:'smooth'
+    })
+}
+
+for (const btn of buttons) {
+    btn.addEventListener('click', () => {
+        scrollTo(form)
+    })
+}
